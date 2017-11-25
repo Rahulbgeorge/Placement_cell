@@ -28,7 +28,7 @@ SECRET_KEY = '8)m8*g00yp4*&8i5(&sd-gp54shwrf$v40#nhdwdm2!53g(ew$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['placement-cell.herokuapp.com']
 
 
 # Application definition
