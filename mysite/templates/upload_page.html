@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {%load staticfiles%}
+<link href='{%static "login/googleapi.css"%}' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' href='{%static "bootstrap.css"%}'>
+<meta charset="UTF-8">
+
+<title>Placement cell login</title>
+<style>
+body {
+    background: url('{%static "login/background.jpg"%}') no-repeat fixed center center;
+    background-size: cover;
+    font-family: Montserrat;
+}
+
+.logo {
+    width: 213px;
+    height: 36px;
+    background: url('{%static "login/pic.png"%}') no-repeat;
+    margin: auto;
+}
+
+.login-block {
+    position:relative;
+    width: 40%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #108576;
+    margin: 0 auto;
+}
+
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+.login-block input#username {
+    background: #fff url('{%static "login/man.png"%}') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#username:focus {
+    background: #fff url('{% static "login/man1.png"%}') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password {
+    background: #fff url('{%static "login/lock.png"%}') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+    background: #fff url('{%static "login/lock1.png"%}') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #108576;
+}
+.login-block input:hover {
+    background: #147E71;
+}
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: #108576;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #108576;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: #147e71;
+}
+
+.login-block input#submit{
+    background: #147e71;
+    
+}   
+
+textarea{height:10em;width:25em;}
+
+
+
+
+
+
+
+
+.notify-block {
+    width: 65%;
+    padding: 20px;
+    padding-right:0px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #108576;
+    margin: 0 auto;
+}
+
+.notify-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.upload-block {
+    width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+}
+
+.upload-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.upload-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+.login-block input#submit {
+    width: 100%;
+    height: 40px;
+    background: #108576;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #108576;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: #ff656c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e15960;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.upload-block button:hover {
+    background: #ff7b81;
+}
+.delete{        margin:10px;
+                width:20px;
+                height:20px;
+                text-align:center;
+                background-image:url("{%static 'del.png'%}");
+                font-weight: bold;
+                background-size: 100% 100%;
+                
+                
+            }
+
+</style>
+</head>
+
+<body>
+    <button class='btn btn-danger' style="float:right;margin:10px;"><a href="/logout/">Logout</a></button>
+<div style="font-size:30px;color:white;text-align:center;">Admin Page</div>
+<br><br><br><br>
+
+
+<div class="login-block">
+    <h2 align='center'>Create Post</h2>
+    <h1></h1>
+  {%block upload%}
+  {%endblock%}
+</div>
+
+<br><br><br><br>
+
+{%block noti_display%}
+{% endblock %}
+</body>
+
+</html>

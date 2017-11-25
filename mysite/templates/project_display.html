@@ -1,0 +1,159 @@
+0<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load staticfiles%}
+<meta charset="UTF-8" />
+<title>Engineer's Day</title>
+<script src="{%static 'js/jquery.min.js'%}"></script>
+<link rel="stylesheet" href="{%static 'bootstrap.css'%}">
+<link rel="stylesheet" type="text/css" media="all" href="{% static 'project_display.css'%}" />
+<link href="https://fonts.googleapis.com/css?family=Anton|Cinzel" rel="stylesheet">
+</head>
+<body>
+    <div id="section" style='background-image:url({%static "projects/background.jpg"%})'>
+        <div class="project">
+            <h1> Projects </h1>
+        </div>
+    </div>
+    <div class="section2">
+        <br>
+        <br>
+        <div class="container">
+            <br>
+            <div class="row">
+                <p id="pro"> About </p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class=col-md-10>
+                    <p id="p"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <br><br>
+        <div class="container">
+            <br>
+            <div class="row">
+                <p id="pro">Some of the projects</p>
+            </div>
+            <br>
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div>
+                        <img src="{%static 'projects/magic_music.jpg'%}" onclick="openModal(); currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div>
+                        <p class="phead"> Magic Music</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <img src="{% static 'projects/electricity_generator.jpg'%}" onclick="openModal(); currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div>
+                        <p class="phead"> Electicity Generator</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <img src="{%static 'projects/substitution_finder.jpg'%}" onclick="openModal(); currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div>
+                        <p class="phead">Substitution finder</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                    <div class="col-md-4">
+                            <div>
+                                <img src="{%static 'projects/magic_music.jpg'%}" onclick="openModal(); currentSlide(1)" class="hover-shadow">
+                            </div>
+                            <div>
+                                <p class="phead"> Magic Music</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <img src="{% static 'projects/electricity_generator.jpg'%}" onclick="openModal(); currentSlide(2)" class="hover-shadow">
+                            </div>
+                            <div>
+                                <p class="phead"> Electicity Generator</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <img src="{%static 'projects/substitution_finder.jpg'%}" onclick="openModal(); currentSlide(3)" class="hover-shadow">
+                            </div>
+                            <div>
+                                <p class="phead">Substitution finder</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-4">
+                                <div>
+                                    <img src="{%static 'projects/magic_music.jpg'%}" onclick="openModal(); currentSlide(1)" class="hover-shadow">
+                                </div>
+                                <div>
+                                    <p class="phead"> Magic Music</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <img src="{% static 'projects/electricity_generator.jpg'%}" onclick="openModal(); currentSlide(2)" class="hover-shadow">
+                                </div>
+                                <div>
+                                    <p class="phead"> Electicity Generator</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <img src="{%static 'projects/substitution_finder.jpg'%}" onclick="openModal(); currentSlide(3)" class="hover-shadow">
+                                </div>
+                                <div>
+                                    <p class="phead">Substitution finder</p>
+                                </div>
+                            </div>
+                    </div>
+                
+        
+   
+</div>
+    <div id="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img src="image.png" class="modal-img">
+        </div>
+    </div>
+<script>
+function openModal() {
+  document.getElementById('modal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('modal').style.display = "none";
+}
+$(document).ready(function(){
+    $(document).keydown(function(event){
+      if (event.keyCode == 38){
+        $('html, body').animate({
+          scrollTop: '-=700'
+        }, 500);
+      }
+      if (event.keyCode == 40){
+        $('html, body').animate({
+          scrollTop: '+=700'
+        }, 500);
+      }
+    });
+}); 
+</script>
+</body>
+</html>

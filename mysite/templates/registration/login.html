@@ -1,0 +1,16 @@
+{%extends 'login_page1.html'%}
+{%block log%}
+<form  action='.' method='post' class="login-form">
+<br>
+    
+{{login.as_p}}
+<input class="login-btn" type="submit" value='login' style='text-align:center;'> 
+
+{%csrf_token%}
+</form>
+{{log_response}}
+
+{%endblock%}
+
+
+        

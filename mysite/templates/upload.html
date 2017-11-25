@@ -1,0 +1,31 @@
+{%extends 'upload_page.html' %}
+{%block upload%}
+<form  action='.' method='post' enctype="multipart/form-data">
+
+{{form.as_p}}
+<input type='submit' id='submit' value='Post   ' class="btn btn-default">
+{%csrf_token%}
+</form>
+{{log_response}}
+{%endblock%}
+
+{% block noti_display %}
+
+{%for i in data%}
+
+<div class="notify-block">
+    <div style='position:relative;float:right;'><form action='.' method='post'>{%csrf_token%}<input type='submit' class='delete' name='val_{{i.id}}' value=' '></form></div>
+    
+  <div style="position:relative;float:left;width:65%">
+  <u><b>{{i.topic}}</u></b><br>
+  {{i.content}}
+  </div>
+  <div stye="position:relative; float:right; width:20%">
+  <img src="{{i.picture.url}}" style="width:250px; height:250px;">
+  </div>
+</div>
+<br><br>
+
+{%endfor%}
+{%endblock%}
+

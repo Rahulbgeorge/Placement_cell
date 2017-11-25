@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+        {% load staticfiles %}
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Page</title>
+		<meta name="description" content="Christ University, Faculty of engineering" />
+		<meta name="author" content="Arnold" />
+		<link rel="shortcut icon" href="ico/favicon.ico">
+        
+        <script src="{% static 'js/pace.min.js' %}"></script>
+        <link rel="stylesheet" type="text/css" href="{%static 'css/pageloader.css'%}" />
+
+		<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css'%}" />
+		<link rel="stylesheet" type="text/css" href="{%static 'css/demo.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{%static 'css/component.css'%}" /><link rel="stylesheet" type="text/css" href="{%static 'css/componentQUOTE.css'%}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/componentHead.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/demoLOGO.css'%}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/componentLOGO.css'%}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/styleFOOTER.css'%}" />
+		<script src="{%static 'js/snap.svg-min.js'%}"></script>
+        <script src="{% static 'js/modernizr.custom.js'%}"></script>
+        
+		<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.2.0/css/font-awesome.min.css'%}" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        
+        <style>
+            
+            .fixedTop{
+                position: fixed;
+                top: 0;
+                padding-top: 30px;
+                text-align: center;
+                background-color: #38383f;
+                z-index: 1200;
+                width: 100%;
+                border-bottom-style: solid;
+                border-bottom-color: white;
+                border-bottom-width: 1px;
+                height: 100px;
+            }
+            
+            .offset:before{ 
+                display: block; 
+                content: " "; 
+                height: 150px;      
+                margin-top: -150px;
+                visibility: hidden; 
+            }
+            .container{
+                text-align: justify;
+            }
+        </style>
+	</head>
+	<body>
+        
+        
+    <div class="demo-1">
+        <div id="container" class="container intro-effect-push">
+            
+			
+            <header class="header">
+                <div class="bg-img"><img src="{% static 'img/7.jpg' %}" alt="Background Image"/></div>
+                <div class="title">
+                    <nav class="codrops-demos">
+                        <a>Click or Scroll to explore<p><i class="fa fa-arrow-down" aria-hidden="true"></i></p></a>
+                    </nav>
+                    <h1>Career Guidance Cell</h1>
+                </div>
+            </header>
+            <button class="trigger" style="top:0:left:0;width:100%;height:100%"></button>
+            <div class="title">
+                <h1 id="aboutLink" class="offset">Career Guidance Cell</h1>
+                <p class="subline">Faculty of Engineering</p>
+            </div>
+            <article class="content">
+                <nav class="codrops-demos fixedTop">
+                        <a class="current-demo" href="#aboutLink">About</a>
+                        <a href="#visionLink">Vision</a>
+                        <a href="#missionLink">Mission</a>
+                        <a href="#ppLink">Placement Process</a>
+                        <a href="#compLink">List of Companies</a>
+                        <a href="#">Contact</a>
+                    </nav>
+                <div>
+                    <p>The Career Guidance Cell  facilitates the students to explore the world of employment and new career avenues. It also helps students in career planning through counseling where in they gather information about themselves in terms of their interests, aptitudes and other abilities so that they can choose their career more effectively. The objective of the Cell is also on the professional development of the students by training them towards employability skills with personality development training ,motivational talks, counseling , etc.. which in turn helps the students to move into a desired occupation and apply in prestigious postgraduate and professional schools.</p>
+                    <p>The Career Guidance Cell also helps the students to prepare with GRE, GATE, CAT and other competitive examinations. Industry experts, corporate heads, our own alumni’s , Professors from other institutions and other eminent personalities are invited to the campus to have corporate interface ,there by giving a glimpse of life outside the campus. The cell has state-of-the-art facilities that make campus recruitment a pleasant experience. Student placement representatives from each class are also present to provide assistance throughout the selection process.</p>
+                    <br>
+                    <h3 id="visionLink" class="offset">Vision</h3>
+                    <p>Towards  career perfection and contribute to society.</p>
+                    <h3 id="missionLink" class="offset">Mission</h3>
+                    <blockquote style="text-align:left">To  carve / orient a generation of highly motivated , employable and socially sensitive  student community through constant guidance/mentoring , thereby preparing them to succeed in a challenging  and demanding arena/ environment</blockquote>
+                </div>
+            </article>
+        </div>
+        </div>
+        
+        <div class="container">
+            
+			<div class="main">
+                <header class="header">
+                    <div class="title" >
+                        <p class="subline" style="color:#108576">Notifications</p>
+                    </div>
+                </header>
+                <article class="content">
+                    <div id="cbp-qtrotator" class="cbp-qtrotator">
+                        <div class="cbp-qtcontent">
+                            <img src="{%static 'img/1.jpg'%}" alt="img01" />
+                              <p>News 1 . Sample Text paragraph.The Career Guidance Cell  facilitates the students to explore the world of employment and new career avenues.</p>
+                        </div>
+                        <div class="cbp-qtcontent">
+                            <img src="%static 'img/2.jpg'%" alt="img02" />
+                              <p>News 2 .It also helps students in career planning through counseling where in they gather information about themselves in terms of their interests, aptitudes and other abilities so that they can choose their career more effectively. </p>
+                        </div>
+                        <div class="cbp-qtcontent">
+                            <img src="{%static 'img/3.jpg'%}" alt="img03" />
+                              <p>News 3. The objective of the Cell is also on the professional development of the students by training them towards employability skills with personality development training ,motivational talks, counseling , etc.. </p>
+                        </div>
+                        <div class="cbp-qtcontent">
+                            <img src="{%static 'img/5.jpg'%}" alt="img04" />
+                              <p>News 4 .The cell has state-of-the-art facilities that make campus recruitment a pleasant experience. Student placement representatives from each class are also present to provide assistance throughout the selection process.</p>
+                        </div>
+                    </div>
+                </article>
+			</div>
+		</div>
+        
+        
+        <div class="demo-4">
+        <div id="container" class="container">
+            <header class="header">
+                <div class="bg-img"><img src="{%static 'img/4.jpg'%}" alt="Background Image" /></div>
+                <div class="title" >
+                    <h1 style="color:#108576" id="ppLink" class="offset">Placement</h1>
+                    <p class="subline" style="color:#108576">Process</p>
+                </div>
+            </header>
+            <article class="content">
+                <div>
+                    <p style="margin-top:140px">The placement process for the Faculty of Engineering  has been formulated in line with the policy of the University, to efficiently streamline the recruitment experience to both the students and the recruiter.</p>
+                    <h3>1.	Registration of Students</h3>
+                    <p>The students willing to participate in the Campus Recruitment Process would be required to register their consent with the CGC ( Career Guidance Cell ) through the Knowledge-Pro.</p>
+                    <h3>2.  Pre- placement Talks</h3>
+                    <p>The Pre-placement talks shall be conducted , if asked by the recruiter , prior to the beginning of the Pre Interview screening .This is to facilitates interaction between the students and the potential recruiters.</p>
+                    <h3>3.	Pre Interview Screening</h3>
+                    <p><li>The procedure for pre Interview screening ( if any )is recruiters own policy.</li><li>The applicants selected in the pre interviews screening shall qualify for appearing in the final Interviews.</li></p>
+                    <h3>4.  The Final Interview</h3>
+                    <p>List shall be made as per the recruiters recruitment policy, or according to the results of the Pre-Interview Screening conducted by the Recruiter.</p>
+                    <h3>5.	Final Offer</h3>
+                    <p>Based on the interview results, the recruiter decides to give an offer to the student to join the organization and would expect to give  consent within a stipulated period of time.</p>
+                    <h3>6. Miscellaneous</h3>
+                    <p><strong>(a)</strong>    Registered students are expected to refer to the CGC notice board on the Ground floor of Block II,  Faculty of Engineering. Registered students are also expected to be in touch with their respective department Faculty-in Charge / Placement coordinator / Student Placement representative on a regular basis regarding updates on the placement activity.<br><strong>(b)</strong>    Students should be well groomed and should be dressed in the institute formal suit.<br><strong>(c)</strong>    Students should carry at least 2 copies of their CVs and Mark cards in a folder along with 3 passport size photographs and ID card for the placement process.</p>
+                </div>
+            </article>
+            </div>
+        </div>
+        <div class="demo-4">
+        <div id="container" class="container">
+            <header class="header">
+                <div class="bg-img"><img src="{%static 'img/6.jpg'%}" alt="Background Image" /></div>
+                <div class="title" >
+                    <h1 style="color:#108576" id="compLink" class="offset">List of</h1>
+                    <p class="subline" style="color:#108576">Companies</p>
+                </div>
+            </header>
+            </div>
+        </div>
+        <div>
+            <div class="LOGO no-js">
+                <section id="grid" class="grid logoBox">
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{%static 'img/LOGO/bosch.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Bosch</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{%static 'img/LOGO/festo.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Festo</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{%static 'img/LOGO/purnatva.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Purnatva</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{%static 'img/LOGO/scii.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>SCII</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{%static 'img/LOGO/ibm.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>IBM</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{%static 'img/LOGO/hm.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Happiest Mind</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{% static 'img/LOGO/cargill.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Cargill</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{%static 'img/LOGO/sap.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>SAP</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{% static 'img/LOGO/unisys.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Unisys</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{%static 'img/LOGO/lt.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>l&amp;T Infotech</h2>
+                                <button>View site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{%static 'img/LOGO/tm.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Tech Mahindra</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="{%static 'img/LOGO/nutanix.png'%}" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Nutanix</h2>
+                                <button>View Site</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+			<p class="footer-header">Career Guidance Cell</p>
+			<p class="footer-links">
+				<a href="#aboutLink">Back to top</a>
+                ·
+				<a href="http://christuniversity.in">Christ University</a>
+                ·
+				<a href="#">Contact</a>
+			</p>
+			<p class="footer-footer">Christ University &copy; 2017</p>
+		</footer>
+
+		<script src="{% static 'js/classie.js'%}"></script>
+        <script src="{%static 'js/jquery-ui.min.js'%}"></script>
+        <script src="{%static 'js/jquery.min.js'%}"></script>
+        <script src="{%static 'js/jquery.cbpQTRotator.min.js'%}"></script>
+		<script>
+			$( function() {
+				$( '#cbp-qtrotator' ).cbpQTRotator();
+			} );
+		</script>
+		<script>
+			(function() {
+
+				// detect if IE : from http://stackoverflow.com/a/16657946		
+				var ie = (function(){
+					var undef,rv = -1; // Return value assumes failure.
+					var ua = window.navigator.userAgent;
+					var msie = ua.indexOf('MSIE ');
+					var trident = ua.indexOf('Trident/');
+
+					if (msie > 0) {
+						// IE 10 or older => return version number
+						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+					} else if (trident > 0) {
+						// IE 11 (or newer) => return version number
+						var rvNum = ua.indexOf('rv:');
+						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+					}
+
+					return ((rv > -1) ? rv : undef);
+				}());
+
+
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
+				// left: 37, up: 38, right: 39, down: 40,
+				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+				function preventDefault(e) {
+					e = e || window.event;
+					if (e.preventDefault)
+					e.preventDefault();
+					e.returnValue = false;  
+				}
+
+				function keydown(e) {
+					for (var i = keys.length; i--;) {
+						if (e.keyCode === keys[i]) {
+							preventDefault(e);
+							return;
+						}
+					}
+				}
+
+				function touchmove(e) {
+					preventDefault(e);
+				}
+
+				function wheel(e) {
+					// for IE 
+					//if( ie ) {
+						//preventDefault(e);
+					//}
+				}
+
+				function disable_scroll() {
+					window.onmousewheel = document.onmousewheel = wheel;
+					document.onkeydown = keydown;
+					document.body.ontouchmove = touchmove;
+				}
+
+				function enable_scroll() {
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+				}
+
+				var docElem = window.document.documentElement,
+					scrollVal,
+					isRevealed, 
+					noscroll, 
+					isAnimating,
+					container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function scrollY() {
+					return window.pageYOffset || docElem.scrollTop;
+				}
+				
+				function scrollPage() {
+					scrollVal = scrollY();
+					
+					if( noscroll && !ie ) {
+						if( scrollVal < 0 ) return false;
+						// keep it that way
+						window.scrollTo( 0, 0 );
+					}
+
+					if( classie.has( container, 'notrans' ) ) {
+						classie.remove( container, 'notrans' );
+						return false;
+					}
+
+					if( isAnimating ) {
+						return false;
+					}
+					
+					if( scrollVal <= 0 && isRevealed ) {
+						toggle(0);
+					}
+					else if( scrollVal > 0 && !isRevealed ){
+						toggle(1);
+					}
+				}
+
+				function toggle( reveal ) {
+					isAnimating = true;
+					
+					if( reveal ) {
+						classie.add( container, 'modify' );
+					}
+					else {
+						noscroll = true;
+						disable_scroll();
+						classie.remove( container, 'modify' );
+					}
+
+					// simulating the end of the transition:
+					setTimeout( function() {
+						isRevealed = !isRevealed;
+						isAnimating = false;
+						if( reveal ) {
+							noscroll = false;
+							enable_scroll();
+						}
+					}, 1200 );
+				}
+
+				// refreshing the page...
+				var pageScroll = scrollY();
+				noscroll = pageScroll === 0;
+				
+				disable_scroll();
+				
+				if( pageScroll ) {
+					isRevealed = true;
+					classie.add( container, 'notrans' );
+					classie.add( container, 'modify' );
+				}
+				
+				window.addEventListener( 'scroll', scrollPage );
+				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+			})();
+		</script>
+        
+        <script>
+        
+            $(document).ready(function () {
+            $(document).on("scroll", onScroll);
+
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                $(document).off("scroll");
+
+                $('a').each(function () {
+                    $(this).removeClass('current-demo');
+                })
+                $(this).addClass('current-demo');
+
+                var target = this.hash,
+                    menu = target;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top+2
+                }, 500, 'swing', function () {
+                    window.location.hash = target;
+                    $(document).on("scroll", onScroll);
+                });
+            });
+        });
+
+        function onScroll(event){
+            var scrollPos = $(document).scrollTop();
+            $('a').each(function () {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                    $('a').removeClass("current-demo");
+                    currLink.addClass("current-demo");
+                }
+                else{
+                    currLink.removeClass("current-demo");
+                }
+            });
+        }
+            //--LOGO---
+            
+			(function() {
+	
+				function init() {
+					var speed = 330,
+						easing = mina.backout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+        
+        </script>
+        
+	</body>
+</html>
