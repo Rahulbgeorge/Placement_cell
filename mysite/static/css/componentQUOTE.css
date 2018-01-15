@@ -72,13 +72,16 @@
 .cbp-qtrotator .cbp-qtcontent img {
 	float: right;
 	margin-left: 3em;
+	height: 150px;
+	width:150px;
 }
 
 
 @media screen and (max-width: 30.6em) { 
 
 	.cbp-qtrotator {
-		font-size: 70%;
+		font-size: 170%;
+        margin-bottom: 700px;
 	}
 
 	.cbp-qtrotator img {

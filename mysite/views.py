@@ -4,6 +4,8 @@ from . import forms
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from . import models
+#firebase
+import pyrebase
 
 from datetime import datetime
 
@@ -69,7 +71,45 @@ def upload_file(request):
             if form.is_valid():
 
                 if 'file' in list(request.FILES.keys()):
-                    instance = models.Notifications(content=form.cleaned_data['content'],topic=form.cleaned_data['topic'],picture=request.FILES['file'],Date=datetime.now())
+                    print(request.FILES['file'])
+                    #THESE CONFIG INFO CAN BE RECIEVED FROM THE FIREBASE WEBSITE
+                    config = {
+                        'apiKey': "AIzaSyAQlgv00tacK6PX6uu8JTAk2xKQjToFtHk",
+                        'authDomain': "placement-cell-a7845.firebaseapp.com",
+                        'databaseURL': "https://placement-cell-a7845.firebaseio.com",
+                        'projectId': "placement-cell-a7845",
+                        'storageBucket': "placement-cell-a7845.appspot.com",
+                        
+                        'messagingSenderId': "403017858632"
+                    }
+
+                    firebase = pyrebase.initialize_app(config)
+
+                    storage = firebase.storage()
+                    ''' THE CHILD PUTS THE IMAGE IN THE REQUIRED PICTURES IN THE 
+                    PLACE WITH THE DESTINATION PICTURE NAME. THE PUT METHOD IS USED TO 
+                    PUT THE PARTICULAR IMAGE FROM THE LOCAL FILE
+
+                    THIS METHOD RETURNS A DICTIONARY WHICH CONSISTS OF THE INFO REGARDING
+                    THE STORAGE'''
+                    data=storage.child("placementcell/"+str(request.FILES['file'])).put(request.FILES['file'])
+
+                    '''FROM THE INFO STORED IN THE DATA , THE DOWNLOADTOKEN IS USED TO 
+                    ACCESS IT FROM THE DATABASE'''
+
+                    token=data['downloadTokens']
+
+
+
+                    #THIS TOKEN IS USED TO ACCESS THE URL
+
+                    url=storage.child("placementcell/"+str(request.FILES['file'])).get_url(token)
+
+
+
+
+
+                    instance = models.Notifications(content=form.cleaned_data['content'],topic=form.cleaned_data['topic'],picture=url,Date=datetime.now())
                     instance.save()
                     return render(request, 'upload.html', {'log_response': "file uploaded succcessfully"})
 

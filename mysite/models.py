@@ -8,4 +8,4 @@ class Notifications(models.Model):
     Date = models.DateTimeField()
     content = models.CharField(max_length=600)
     topic = models.CharField(max_length=150)
-    picture = models.FileField(null=True)
+    picture = models.CharField(null=True,blank=True,max_length=80)
