@@ -15,7 +15,7 @@
   <br><br><br><center><h4>Main Page(Screen 1)<br>
   <img src="snapshots/1.jpg">
   <br><br>Main Page(Notification)<br>
-  <img src="snaphsots/2.jpg">
+  <img src="snaphshots/2.jpg">
   <br><br>Main Page(Companies List)<br>
   <img src="snapshots/3.jpg">
   <br><br>Login screen<br>
@@ -24,3 +24,7 @@
   <img src="snapshots/admin.jpg">
   <br><br>Admin Panel2<br>
   <img src="snapshots/admin2.jpg">
+
+<h3>Developers</h3>
+<ul><li>Rahul B George</li>
+  <li>Arnold Gabriel Benedict</li></ul>
