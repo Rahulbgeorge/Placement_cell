@@ -15,8 +15,7 @@
   <li>Notification: Where the Page admin can dynamically upload placement related information</li>
   <li>Login Screen</li></ul>
   
-  <br><br><br><center><h4>Main Page(Screen 1)<br>
-  <img src="snapshots/1.jpg">
+
   <br><br>Main Page(Notification)<br>
   <img src="snaphshots/2.jpg">
   <br><br>Main Page(Companies List)<br>
