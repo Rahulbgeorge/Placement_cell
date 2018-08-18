@@ -1,5 +1,8 @@
 # Placement cell Website
 
+
+  <img src="snapshots/1.jpg">
+
 <h2>Requirements:</h2>
 <ul><li>Django(python)</li>
 <li>HTML, CSS, JAVAScript</li>
